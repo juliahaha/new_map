@@ -1,5 +1,6 @@
 {
     "container": "map",
-    "accessToken": "",
-    "style": "mapbox://styles/mapbox/streets-v11"
+    "accessToken": "pk.eyJ1Ijoic2NobmVsbGoiLCJhIjoiY2tseWl2NnQ1MDN1NzJwbnphcDdvcDJqcCJ9.d8uHWyns2zFOlGJisAy8tA",
+    "style": "mapbox://styles/schnellj/ckly5kapd0rou17qkf8n2l067"
+
 }
