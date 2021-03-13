@@ -14,7 +14,25 @@
             "type": "circle",
             "source": "sites",
             "paint": {
-                
+                "circle-color": "red",
+                "circle-radius": "2",
+                "circle-stroke-width": "1",
+                "circle-stroke-color": "blue"
+            }
+        },
+        {
+            "id": "parking-labels",
+            "type": "symbol",
+            "source": "sites",
+            "paint": {
+                "text-color": "white"
+            },
+            "layout": {
+                "text-field": [
+                "concat",
+                ["get", "spaces"],
+                " spaces"
+                ]
             }
         }
     ]
