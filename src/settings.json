@@ -1,6 +1,7 @@
 {
     "container": "map",
     "accessToken": "pk.eyJ1Ijoic2NobmVsbGoiLCJhIjoiY2tseWl2NnQ1MDN1NzJwbnphcDdvcDJqcCJ9.d8uHWyns2zFOlGJisAy8tA",
-    "style": "mapbox://styles/schnellj/ckm8044496ct317qyw3me9ts5"
-
+    "style": "mapbox://styles/schnellj/ckm8044496ct317qyw3me9ts5",
+    "center": [-122.431583, 37.786966],
+    "zoom": 9
 }

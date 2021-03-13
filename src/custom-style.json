@@ -1,4 +1,21 @@
 {
-    "sources": {},
-    "layers": []
+    "sources": {
+        "sites": {
+            "type": "geojson",
+            "data" :{
+                "type": "FeatureCollection",
+                "features": []
+            }
+        }
+    },
+    "layers": [
+        {
+            "id": "properties-points",
+            "type": "circle",
+            "source": "sites",
+            "paint": {
+                
+            }
+        }
+    ]
 }
