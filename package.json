@@ -11,7 +11,7 @@
     "scripts": {
         "build": "webpack",
         "serve": "webpack-serve",
-        "process": "cd src && node --experimental-modules process.mjs"
+        "process": "cd src && node --experimental-modules --experimental-json-modules process.mjs"
     },
     "dependencies": {
         "mapbox-gl": "^2.1.1"

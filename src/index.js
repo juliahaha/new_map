@@ -7,7 +7,8 @@ import custom from "./custom-style.json";
 let map;
 
 async function init() {
-    const sites = await import("../data/sites.json")
+    const sites = await import("../data/sites.json");
+    const districts = await import("../data/SupDist.json");
     const style = map.getStyle();
 
     style.sources = {
@@ -18,6 +19,7 @@ async function init() {
     map.setStyle(style);
 
     map.getSource("sites").setData(sites);
+    map.getSource("districts").setData(districts);
 }
 
 mapboxgl.accessToken = settings.accessToken;

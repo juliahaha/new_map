@@ -2,9 +2,16 @@
     "sources": {
         "sites": {
             "type": "geojson",
-            "data" :{
+            "data": {
                 "type": "FeatureCollection",
                 "features": []
+            }
+        },
+            "districts": {
+                "type": "geojson",
+                "data" :{
+                    "type": "FeatureCollection",
+                    "features": []
             }
         }
     },
@@ -15,8 +22,8 @@
             "source": "sites",
             "paint": {
                 "circle-color": "red",
-                "circle-radius": "2",
-                "circle-stroke-width": "1",
+                "circle-radius": 2,
+                "circle-stroke-width": 1,
                 "circle-stroke-color": "blue"
             }
         },
@@ -25,7 +32,7 @@
             "type": "symbol",
             "source": "sites",
             "paint": {
-                "text-color": "white"
+                "text-color": "blue"
             },
             "layout": {
                 "text-field": [
@@ -33,6 +40,15 @@
                 ["get", "spaces"],
                 " spaces"
                 ]
+            }
+        },
+        {
+            "id":  "districts-fill",
+            "type": "line",
+            "source": "districts",
+            "paint": {
+                "line-color": "red",
+                "line-width": 0.5
             }
         }
     ]
