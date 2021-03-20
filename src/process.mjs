@@ -9,6 +9,14 @@ sites.features.forEach(function(feature) {
     };
 });
 
+supdist.features = supdist.features.filter(function(feature){
+    return feature.geometry;
+});
+
+sites.features = sites.features.filter(function(feature){
+    return feature.geometry;
+});
+
 let output = turf.collect(supdist, sites, "count", "count");
 
 output = output.features.filter(function(feature, i) {

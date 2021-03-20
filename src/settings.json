@@ -3,5 +3,7 @@
     "accessToken": "pk.eyJ1Ijoic2NobmVsbGoiLCJhIjoiY2tseWl2NnQ1MDN1NzJwbnphcDdvcDJqcCJ9.d8uHWyns2zFOlGJisAy8tA",
     "style": "mapbox://styles/schnellj/ckm8044496ct317qyw3me9ts5",
     "center": [-122.431583, 37.786966],
-    "zoom": 9
+    "zoom": 9,
+    "pitch": 40,
+    "customAttribution": "Data via <a href='http://www.datasf.org/opendata/' target='_blank'>DataSF.org</a>"
 }

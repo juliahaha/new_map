@@ -43,12 +43,39 @@
             }
         },
         {
-            "id":  "districts-fill",
+            "id": "district-lines",
             "type": "line",
             "source": "districts",
             "paint": {
-                "line-color": "red",
-                "line-width": 0.5
+                "line-width": [
+                    "case",
+                    [
+                        "boolean",
+                        ["feature-state", "hover"],
+                        false
+                    ],
+                    3,
+                    1
+                ]
+            }
+        },
+        {
+            "id":  "districts-fill",
+            "type": "fill-extrusion",
+            "source": "districts",
+            "paint": {
+                "fill-extrusion-opacity": 0.5,
+                "fill-extrusion-height": ["*", ["get", "count"], 1],
+                "fill-extrusion-color": [
+                    "step",
+                    ["get", "count"],
+                    "rgb(241,238,246)", 100,
+                    "rgb(208,209,230)", 200,
+                    "rgb(166,189,219)", 300,
+                    "rgb(116,169,207)", 400,
+                    "rgb(43,140,190)", 500,
+                    "rgb(4,90,141)"
+                ]
             }
         }
     ]
